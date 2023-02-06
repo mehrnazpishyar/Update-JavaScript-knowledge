@@ -72,3 +72,35 @@ const {street:st} = address
 
 //***************************************************
 
+//spread operators
+
+const first = [1,2,3, "b", "c"]
+const second = [4,5,6]
+
+//combined in array
+
+const combined=[...first , ...second] 
+//  console.log(combined)
+
+ //result [1, 2, 3, 4, 5, 6]
+
+ // how to clone (copy) from array
+
+ const clone = [...first]
+//  console.log(clone)
+
+//combined in object
+
+const one = {name : "mehrnaz"}
+
+const two = {job: "programmer"}
+
+const combineed = {...one , ...two}
+// console.log(combineed)
+
+ // how to clone (copy) from object
+
+ const clonee = {...one}
+//  console.log(clonee)
+
+//***************************************************
