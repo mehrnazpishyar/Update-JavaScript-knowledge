@@ -1,36 +1,31 @@
+// const person = {
+//   name: "mehrnaz",
+//   walk() {
+//     console.log("hello");
+//   },
+// };
 
+// person.walk();
 
-const person = {
-    name:'mehrnaz',
-    walk() {
-        console.log("hello")
-    },
-}
-
-person.walk()
-
-
-person["name"] = 'esmaeil'
+// person["name"] = "esmaeil";
 
 //***************************************************
 
-
 //here walk is function : because my function stored in a variable
-const walk = person.walk;
-console.log(walk)
-
+// const walk = person.walk;
+// console.log(walk);
 
 //***************************************************
 
 //filter method
 
 const jobs = [
-    {id:1, isActive:true},
-    {id:2, isActive:true},
-    {id:3, isActive:false},
-]
+  { id: 1, isActive: true },
+  { id: 2, isActive: true },
+  { id: 3, isActive: false },
+];
 
-const activeJobs = jobs.filter(job => job.isActive)
+const activeJobs = jobs.filter((job) => job.isActive);
 
 // console.log(activeJobs)
 
@@ -38,35 +33,34 @@ const activeJobs = jobs.filter(job => job.isActive)
 
 //map method
 
-const colors = ['red' , 'green' , 'blue'];
+const colors = ["red", "green", "blue"];
 
 // const items = colors.map(color => '<li>' + color + '</li>'
 // )
 
-//or 
+//or
 
-const items = colors.map(color =>` <li> + ${color} + </li>`
-)
+const items = colors.map((color) => ` <li> + ${color} + </li>`);
 
 //***************************************************
 
 //Object distructing
 
- const address = {
-    street:"",
-    city:"",
-    country: ""
- }
+const address = {
+  street: "",
+  city: "",
+  country: "",
+};
 
 //  const street = address.street;
 //  const city = address.city;
 //  const country = address.country;
 
- //insteed of these phrases you can use Object distructing
+//insteed of these phrases you can use Object distructing
 
- const {street, city, country} = address
+const { street, city, country } = address;
 
-const {street:st} = address
+const { street: st } = address;
 
 // console.log(address)
 
@@ -74,33 +68,64 @@ const {street:st} = address
 
 //spread operators
 
-const first = [1,2,3, "b", "c"]
-const second = [4,5,6]
+const first = [1, 2, 3, "b", "c"];
+const second = [4, 5, 6];
 
 //combined in array
 
-const combined=[...first , ...second] 
+const combined = [...first, ...second];
 //  console.log(combined)
 
- //result [1, 2, 3, 4, 5, 6]
+//result [1, 2, 3, 4, 5, 6]
 
- // how to clone (copy) from array
+// how to clone (copy) from array
 
- const clone = [...first]
+const clone = [...first];
 //  console.log(clone)
 
 //combined in object
 
-const one = {name : "mehrnaz"}
+const one = { name: "mehrnaz" };
 
-const two = {job: "programmer"}
+const two = { job: "programmer" };
 
-const combineed = {...one , ...two}
+const combineed = { ...one, ...two };
 // console.log(combineed)
 
- // how to clone (copy) from object
+// how to clone (copy) from object
 
- const clonee = {...one}
+const clonee = { ...one };
 //  console.log(clonee)
 
 //***************************************************
+
+// Classes
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  walk() {
+    console.log("walk");
+  }
+}
+
+const personn = new Person("mosh");
+
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name);
+    this.degree = degree;
+  }
+
+  teach() {
+    console.log("teach");
+  }
+}
+
+const teacher = new Teacher("mehrnaz","msc");
+
+// console.log(teacher)
+
+//***************************************************
+
