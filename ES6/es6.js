@@ -10,16 +10,17 @@ const person = {
 person.walk()
 
 
-
 person["name"] = 'esmaeil'
 
-// console.log(person)
+//***************************************************
 
 
 //here walk is function : because my function stored in a variable
 const walk = person.walk;
 console.log(walk)
 
+
+//***************************************************
 
 //filter method
 
@@ -31,7 +32,25 @@ const jobs = [
 
 const activeJobs = jobs.filter(job => job.isActive)
 
-console.log(activeJobs)
+// console.log(activeJobs)
+
+//***************************************************
+
+//map method
+
+const colors = ['red' , 'green' , 'blue'];
+
+// const items = colors.map(color => '<li>' + color + '</li>'
+// )
+
+//or 
+
+const items = colors.map(color =>` <li> + ${color} + </li>`
+)
+
+//***************************************************
+
+
 
 
 
