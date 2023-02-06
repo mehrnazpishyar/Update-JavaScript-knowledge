@@ -50,7 +50,25 @@ const items = colors.map(color =>` <li> + ${color} + </li>`
 
 //***************************************************
 
+//Object distructing
 
+ const address = {
+    street:"",
+    city:"",
+    country: ""
+ }
 
+//  const street = address.street;
+//  const city = address.city;
+//  const country = address.country;
 
+ //insteed of these phrases you can use Object distructing
+
+ const {street, city, country} = address
+
+const {street:st} = address
+
+// console.log(address)
+
+//***************************************************
 
