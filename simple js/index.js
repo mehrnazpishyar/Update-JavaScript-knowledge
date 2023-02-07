@@ -31,19 +31,36 @@ let arrayNew = ["salam", 15, "mehrnaz", 33]
 // }
 
 function greet() {
-    console.log("hellooooo every body")
+    // console.log("hellooooo every body")
 }
 greet();
 
 
 const hello=()=>{
-    console.log("azizam salaaam")
+    // console.log("azizam salaaam")
 }
 hello();
 
 
 const hello2 = (a,b) => a+b;
-console.log(hello(2,3))
+// console.log(hello(2,3))
 
+//---------------------------------------------------
+
+// document.getElementById("btn").onclick = function(){
+//     document.getElementById("write").innerHTML=document.getElementById("text").value
+// }
+
+//----------------------------------------------
+const btnn= document.getElementById("btnn").onclick = function(){
+    const myCheckBox = document.getElementById("myCheckBox")
+    
+    if (myCheckBox.checked) {
+        console.log("you are submited!")
+    }
+    else {
+        console.log("you are Not submited!")  
+    }
+}
 
 
