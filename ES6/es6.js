@@ -102,9 +102,38 @@ const clonee = { ...one };
 
 let number = [1,2,3,4,5,6,7,8,9]
 let maximum = Math.max(...number)
-console.log(...number)
-//***************************************************
+// console.log(...number)
 
+let class1 = ["man", "to", "oo"]
+let class2 = ["ma", "shoma", "anha"]
+
+// class1.push(...class2)
+// console.log(class1)
+
+//result = (6) ['man', 'to', 'oo', 'ma', 'shoma', 'anha']
+
+//***************************************************
+// rest parameters = represents an indefinite number of parameters
+// (pack arguments into an array)
+
+
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = 5;
+
+console.log(sum (a,b,c,d))
+
+function sum (...numbers){
+  let total = 0;
+  for (let number of numbers){
+    total += number
+  }
+  return total
+}
+
+//***************************************************
 // Classes
 
 class Person {
