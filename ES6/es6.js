@@ -71,6 +71,7 @@ const { street: st } = address;
 const first = [1, 2, 3, "b", "c"];
 const second = [4, 5, 6];
 
+
 //combined in array
 
 const combined = [...first, ...second];
@@ -97,6 +98,11 @@ const combineed = { ...one, ...two };
 const clonee = { ...one };
 //  console.log(clonee)
 
+//dar array ma nemitanim ba roye kole arraye amal riazi anjam dahim, baraye in kar ma bayad aval an array ro be addad joda be komak spread operator tabdil konim bad az roye an addad max ya min ya harchize dg migirim 
+
+let number = [1,2,3,4,5,6,7,8,9]
+let maximum = Math.max(...number)
+console.log(...number)
 //***************************************************
 
 // Classes
