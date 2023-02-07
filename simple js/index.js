@@ -63,4 +63,23 @@ const btnn= document.getElementById("btnn").onclick = function(){
     }
 }
 
+//*********************************************
+//nested functions
+
+startProgram();
+
+function startProgram() {
+    let userName = "mehrnaz";
+    let age = 33
+    happyBirthday(userName, age)
+}
+
+
+function happyBirthday(userName, age) {
+    console.log("happy birthday", userName)
+    console.log("you are", age)  
+}
+
+//***************************************
+
 
