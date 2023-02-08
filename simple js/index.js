@@ -127,4 +127,41 @@ const rabbit = new Rabbit();
 const fish = new Fish();
 const hawk = new Hawk();
 
-console.log(rabbit.alive)
+// console.log(rabbit.alive)
+
+//*************************************************
+
+//how to pass calss to function as arguments
+
+class Car {
+    constructor(model, year, color) {
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+}
+
+const car1 = new Car ("mustang" , 2023 , "red");
+const car2 = new Car ("ferari" , 2020 , "blue");
+const car3 = new Car ("lambo" , 2021 , "yellow");
+
+changeColor(car3, "gold")
+displayInfo(car3);
+
+function displayInfo (car){
+    console.log(car.year)
+    console.log(car.color)
+    console.log(car.model)
+}
+
+
+function changeColor (car, color){
+car.color = color
+}
+
+//result = 
+//2021
+//gold
+//lambo
+
+//***********************************************
