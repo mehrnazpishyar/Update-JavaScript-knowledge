@@ -149,9 +149,9 @@ changeColor(car3, "gold")
 displayInfo(car3);
 
 function displayInfo (car){
-    console.log(car.year)
-    console.log(car.color)
-    console.log(car.model)
+    // console.log(car.year)
+    // console.log(car.color)
+    // console.log(car.model)
 }
 
 
@@ -163,5 +163,27 @@ car.color = color
 //2021
 //gold
 //lambo
+
+//***********************************************
+
+//error = object with a description of something went wrong
+
+//throw = executes a user-defined error
+
+try{
+let x = window.prompt("Enter a #")
+x= Number(x);
+if (isNaN(x)) throw "That wasn't a number!"
+if (x == "") throw "That was empty!"
+
+console.log(`${x} is a number`)
+}
+catch(error) {
+console.log(error)
+}
+
+// Result
+// if x = 5  => 5 is a number
+// if x = "m" => That wasn't a number!
 
 //***********************************************
