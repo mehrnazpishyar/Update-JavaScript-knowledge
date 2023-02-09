@@ -171,15 +171,15 @@ car.color = color
 //throw = executes a user-defined error
 
 try{
-let x = window.prompt("Enter a #")
+// let x = window.prompt("Enter a #")
 x= Number(x);
 if (isNaN(x)) throw "That wasn't a number!"
 if (x == "") throw "That was empty!"
 
-console.log(`${x} is a number`)
+// console.log(`${x} is a number`)
 }
 catch(error) {
-console.log(error)
+// console.log(error)
 }
 
 // Result
@@ -187,3 +187,39 @@ console.log(error)
 // if x = "m" => That wasn't a number!
 
 //***********************************************
+
+// promise = object that encapsulates the result of an asynchronous operation
+//           let asynchronous methods return values like synchronous methods
+//           "I promise to return something in the future"
+//           the STATE is 'pending' then: 'fulfilled' or 'rejected'
+
+
+const promise = new Promise((resolve, reject) =>{
+
+    let fileLoaded = true;
+
+    if (fileLoaded){
+        resolve("File loaded")
+    }else{
+        reject("File NOT loaded")
+    }
+});
+
+// promise.then(value => console.log(value))
+//        .catch(error => console.log(error))
+
+// Result
+// if fileLoaded = true  =>  "File loaded"
+// if fileLoaded = false =>  "File NOT loaded"
+
+
+
+const wait = time => new Promise(resolve => {
+    setTimeout(resolve , time)
+})
+
+// wait(3000).then(() => console.log("Thanks for waiting"))
+
+
+//***********************************************
+
