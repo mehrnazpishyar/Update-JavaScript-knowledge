@@ -236,6 +236,19 @@ async function loadFile() {
         throw "File NOT loaded"
     }
 }
+// async = makes a function return a Promise
+// await = makes an async function wait for a Promise
+
+async function loadFile() {
+
+    let fileLoaded = true;
+
+    if (fileLoaded){
+        return "File loaded"
+    } else {
+        throw "File NOT loaded"
+    }
+}
 
 async function startFile(){
     try{
@@ -253,6 +266,24 @@ startFile();
 // if fileLoaded = true  =>  "File loaded"
 // if fileLoaded = false =>  "File NOT loaded"
 
+async function startFile(){
+    // try{
+    //     let message = await loadFile();
+    //     console.log(message)
+    // }
+    // catch(error){
+    //     console.log(error)
+    // }
+}
+
+startFile();
+
+// Result
+// if fileLoaded = true  =>  "File loaded"
+// if fileLoaded = false =>  "File NOT loaded"
+
+
+//***********************************************
 
 
 
