@@ -296,11 +296,29 @@ startFile();
 // deleteCookie("lastName");
 // deleteCookie("email");
 
-setCookie("firstName", "SpongeBob", 365);
-setCookie("lastName", "SquarePants", 365);
+const firstText= document.querySelector("#firstText")
+const lastText= document.querySelector("#lastText")
+const submitBtn = document.querySelector("#submitBtn")
+const cookiesBtn = document.querySelector("#cookiesBtn")
 
-console.log(getCookie("firstName"))
-console.log(getCookie("lastName"))
+submitBtn.addEventListener("click" , ()=>{
+    setCookie("firstName", firstText.value, 365);
+    setCookie("lastName", lastText.value, 365);
+})
+
+cookiesBtn.addEventListener("click" , ()=>{
+  firstText.value = getCookie("firstName")
+  lastText.value = getCookie("lastName")
+})
+
+// deleteCookie("firstName");
+// deleteCookie("lastName");
+
+// setCookie("firstName", "SpongeBob", 365);
+// setCookie("lastName", "SquarePants", 365);
+
+// console.log(getCookie("firstName"))
+// console.log(getCookie("lastName"))
 
 
 // console.log(document.cookie)
