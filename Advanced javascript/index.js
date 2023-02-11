@@ -28,8 +28,8 @@
 // outer()
 // outer()
 
-//result 
-// 1 
+//result
+// 1
 // 1
 
 // if we want counter add one should write this :
@@ -46,28 +46,28 @@
 // fn()
 // fn()
 
-//result 
-// 1 
+//result
+// 1
 // 2
 
 //****************************************
 //curing function
 
-function sum(a,b,c) {
-    return a+b+c
+function sum(a, b, c) {
+  return a + b + c;
 }
 
-function curry(fn){
-    return function(a){
-        return function(b){
-            return function(c){
-                return fn(a,b,c)
-            }
-        }
-    }
+function curry(fn) {
+  return function (a) {
+    return function (b) {
+      return function (c) {
+        return fn(a, b, c);
+      };
+    };
+  };
 }
 
-const curriedSum = curry(sum)
+const curriedSum = curry(sum);
 // console.log(curriedSum(2)(3)(6))
 
 //****************************************
@@ -81,7 +81,6 @@ const curriedSum = curry(sum)
 // func().then(function(result){
 //     console.log(result)
 // })
-
 
 //a promise
 // let promise = new Promise(function(resolve, reject){
@@ -99,22 +98,22 @@ const curriedSum = curry(sum)
 //     } catch (error) {
 //         console.log(error)
 //     }
-  
+
 // }
 
-//calling the async function 
+//calling the async function
 // asyncFunc()
 
-//result 
+//result
 // after 4 second show 'promise resolved' in console.log
 // then print "hello"
 
 //****************************************
 //javascript tricks
 
-const array = [1,2,3]
+const array = [1, 2, 3];
 
-array.length = 0
+array.length = 0;
 // console.log(array)
 
 //Result
@@ -122,16 +121,16 @@ array.length = 0
 
 //****************************************
 
-const numm = "1.01"
+const numm = "1.01";
 
-const result = +numm
+const result =
+  +numm +
+  // console.log(typeof result)
+  // 1.01
 
-// console.log(typeof result)
-// 1.01
+  //Or
 
-//Or
-
-+"1.01" 
+  "1.01";
 //1.01
 
 //****************************************
@@ -161,28 +160,27 @@ const result = +numm
 //****************************************
 
 const store = {
-    "aval" : 1,
-    "dovom" : 2
-}
+  aval: 1,
+  dovom: 2,
+};
 
-delete store.aval
+delete store.aval;
 // console.log(store)
 
-const lists = [1,2]
+const lists = [1, 2];
 
-delete lists[0]
+delete lists[0];
 // console.log(lists)
 
-const {aval , ...rest} = store;
+const { aval, ...rest } = store;
 
 // console.log(rest)
 
-
 //****************************************
 
-const numbers = [1,1,2,3,5,5,1]
+const numbers = [1, 1, 2, 3, 5, 5, 1];
 
-const uniqueNumbers = [...new Set(numbers)]
+const uniqueNumbers = [...new Set(numbers)];
 
 // console.log(uniqueNumbers)
 
@@ -190,17 +188,17 @@ const uniqueNumbers = [...new Set(numbers)]
 
 //****************************************
 
-const num = +1
+const num = +1;
 
 // console.log(typeof num)
 
 //****************************************
 
-// if we want delete all falsy value like undefined or null 
+// if we want delete all falsy value like undefined or null
 
-const values = ['ali' , '' , 7 , false , undefined, null]
+const values = ["ali", "", 7, false, undefined, null];
 
-const pureDate = values.filter(Boolean)
+const pureDate = values.filter(Boolean);
 // console.log(pureDate)
 
 // ['ali', 7]
@@ -244,16 +242,16 @@ const pureDate = values.filter(Boolean)
 const dayNumber = new Date().getDay();
 
 const days = {
-    0: "sunday",
-    1: "monday",
-    2: "tuesday",
-    3: "wednsday",
-    4: "thursday",
-    5: "friday",
-    6: "saturday",
-}
+  0: "sunday",
+  1: "monday",
+  2: "tuesday",
+  3: "wednsday",
+  4: "thursday",
+  5: "friday",
+  6: "saturday",
+};
 
-const day = days[dayNumber]
+const day = days[dayNumber];
 
 // console.log(dayNumber)
 
@@ -261,40 +259,45 @@ const day = days[dayNumber]
 
 // ***************************************
 
-const isVowel = (letter) =>{
-    if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" ){
-        return true;
-    }
-    return false
-}
-
+const isVowel = (letter) => {
+  if (
+    letter === "a" ||
+    letter === "e" ||
+    letter === "i" ||
+    letter === "o" ||
+    letter === "u"
+  ) {
+    return true;
+  }
+  return false;
+};
 
 // console.log(isVowel("a"))
 
 // ORRRR
 
-const isVowell =(letter) => ["a", "e", "i" ,"o", "u"].includes(letter)
+const isVowell = (letter) => ["a", "e", "i", "o", "u"].includes(letter);
 
 //***************************************
 
-const aFunction = (value) =>{
-    if (value !== null && value !== undefined && value !== 0 && value !== NaN){
-        //do something
-    }
-}
+const aFunction = (value) => {
+  if (value !== null && value !== undefined && value !== 0 && value !== NaN) {
+    //do something
+  }
+};
 
 // ORRRR
 
 const aFunctionn = (value) => {
-    if (!!value) {
-          //do something
-    }
-}
+  if (!!value) {
+    //do something
+  }
+};
 
 //***************************************
 
-const number = [1,2,3,4];
-const squared = number.map(number => number * 2)
+const number = [1, 2, 3, 4];
+const squared = number.map((number) => number * 2);
 
 // console.log(squared)
 
@@ -304,17 +307,20 @@ const squared = number.map(number => number * 2)
 
 //reduce
 
-const numberss = [1,2,3,4,5];
-const total = numberss.reduce((total, num)=> total + num, 0)
-console.log(total)
+const numberss = [1, 2, 3, 4, 5];
+const total = numberss.reduce((total, num) => total + num, 0);
+// console.log(total)
 
 //andddd
 
 const adadha = [
-    [1,2,3,4,5],
-    [6,7,8,9,10]
+  [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10],
 ];
-const flattendArray = adadha.reduce((accumulator , item) => [...accumulator , ...item], [])
+const flattendArray = adadha.reduce(
+  (accumulator, item) => [...accumulator, ...item],
+  []
+);
 
 // console.log(flattendArray)
 
@@ -322,4 +328,179 @@ const flattendArray = adadha.reduce((accumulator , item) => [...accumulator , ..
 
 //***************************************
 
+const add = (x) => x + x;
 
+function addition(num = 2, val = add(num)) {
+  // console.log(num , val)
+}
+
+addition(3);
+
+// 3 6
+
+// *****************************************
+
+let x = 1;
+
+// console.log(typeof typeof x)
+
+//string
+
+//*****************************************
+
+const map = new Map();
+
+map.set("a", 1);
+map.set("b", 2);
+map.set("c", 3);
+map.set("d", 7);
+map.set("e", 9);
+
+// console.log(map.get("c"));
+// console.log(map.size);
+
+// 3 5
+
+//*****************************************
+//clouser
+
+// function sum(x) {
+//     return function(y){
+//         return x + y
+//     };
+// }
+
+// let add5 = sum(5)
+// // console.log(add5)
+// let resultt = add5(10)
+// // console.log(resultt)
+
+// // 15
+
+//*****************************************
+
+function numberGenerator() {
+  // Local “free” variable that ends up within the closure
+  var num = 1;
+  function checkNumber() {
+    //   console.log(num);
+  }
+  num++;
+  return checkNumber;
+}
+
+var numberr = numberGenerator();
+numberr();
+
+// 2
+
+//*****************************************
+
+function init() {
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, that forms the closure
+    //   console.log(name); // use variable declared in the parent function
+  }
+  displayName();
+}
+init();
+
+// mozila
+
+//*****************************************
+
+if (Math.random() > 0.5) {
+  var xx = 1;
+} else {
+  var xx = 2;
+}
+//   console.log(xx);
+
+// 2
+
+//*****************************************
+
+if (Math.random() > 0.5) {
+  const x = 1;
+} else {
+  const x = 2;
+}
+//   console.log(x);
+
+// ReferenceError: x is not defined
+
+//*****************************************
+
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    //   console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+// mozila
+
+//*****************************************
+
+// function makeAdder(x) {
+//   return function (y) {
+//     return x + y;
+//   };
+// }
+
+// const add5 = makeAdder(5);
+// const add10 = makeAdder(10);
+// console.log();
+
+//   console.log(add5(2));
+//   console.log(add10(2));
+
+  // 7 12
+
+//*****************************************
+
+//nested fanction
+
+// function outer() {
+//   let outside = "Outside";
+//   function inner() {
+//     let inside = "Inside";
+//     console.log(inside);
+//     console.log(outside);
+//   }
+//   console.log(outside);
+//   inner();
+// }
+// outer();
+
+// Outside
+// Inside
+// Outside
+
+// function outer() {
+//   let outside = "Outside";
+//   function inner() {
+//     let inside = "Inside";
+//     console.log(inside);
+//     console.log(outside);
+//   }
+//   return inner;
+// }
+// let myFuncc = outer();
+// myFuncc();
+
+// Inside
+// Outside
+
+
+function check(){
+    let scope = "local" 
+   
+    return scope
+}
+// console.log(scope) 
