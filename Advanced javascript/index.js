@@ -460,7 +460,7 @@ myFunc();
 //   console.log(add5(2));
 //   console.log(add10(2));
 
-  // 7 12
+// 7 12
 
 //*****************************************
 
@@ -497,10 +497,28 @@ myFunc();
 // Inside
 // Outside
 
+function check() {
+  let scope = "local";
 
-function check(){
-    let scope = "local" 
-   
-    return scope
+  return scope;
 }
-// console.log(scope) 
+// console.log(scope)
+
+const addd = (function () {
+  let counter = 0;
+  return function () {
+    counter += 1;
+    return counter;
+  };
+})();
+
+addd();
+addd();
+addd();
+addd();
+addd();
+addd();
+addd();
+console.log(addd());
+
+// 8
