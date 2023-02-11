@@ -194,3 +194,67 @@ const num = +1
 
 // console.log(typeof num)
 
+//****************************************
+
+// if we want delete all falsy value like undefined or null 
+
+const values = ['ali' , '' , 7 , false , undefined, null]
+
+const pureDate = values.filter(Boolean)
+console.log(pureDate)
+
+// ['ali', 7]
+
+//****************************************
+
+//switch case == object
+
+// const dayNumber = new Date().getDay();
+
+// let day;
+
+// switch (dayNumber){
+//     case 0:
+//         day = "sunday";
+//         break;
+//         case 1 :
+//             day = "monday";
+//             break;
+//         case 2 :
+//             day = "tuesday";
+//             break;
+//         case 3 :
+//             day = "wednsday";
+//             break;
+//         case 4 :
+//             day = "thursday";
+//             break;
+//         case 5 :
+//             day = "friday";
+//             break;
+//         case 6 :
+//             day = "saturday";
+//             break;
+// }
+
+// console.log(dayNumber)
+
+//ORRRR
+
+const dayNumber = new Date().getDay();
+
+const days = {
+    0: "sunday",
+    1: "monday",
+    2: "tuesday",
+    3: "wednsday",
+    4: "thursday",
+    5: "friday",
+    6: "saturday",
+}
+
+const day = days[dayNumber]
+
+console.log(dayNumber)
+
+// 6
