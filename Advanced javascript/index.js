@@ -201,7 +201,7 @@ const num = +1
 const values = ['ali' , '' , 7 , false , undefined, null]
 
 const pureDate = values.filter(Boolean)
-console.log(pureDate)
+// console.log(pureDate)
 
 // ['ali', 7]
 
@@ -255,6 +255,71 @@ const days = {
 
 const day = days[dayNumber]
 
-console.log(dayNumber)
+// console.log(dayNumber)
 
 // 6
+
+// ***************************************
+
+const isVowel = (letter) =>{
+    if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" ){
+        return true;
+    }
+    return false
+}
+
+
+// console.log(isVowel("a"))
+
+// ORRRR
+
+const isVowell =(letter) => ["a", "e", "i" ,"o", "u"].includes(letter)
+
+//***************************************
+
+const aFunction = (value) =>{
+    if (value !== null && value !== undefined && value !== 0 && value !== NaN){
+        //do something
+    }
+}
+
+// ORRRR
+
+const aFunctionn = (value) => {
+    if (!!value) {
+          //do something
+    }
+}
+
+//***************************************
+
+const number = [1,2,3,4];
+const squared = number.map(number => number * 2)
+
+// console.log(squared)
+
+// [2, 4, 6, 8]
+
+//***************************************
+
+//reduce
+
+const numberss = [1,2,3,4,5];
+const total = numberss.reduce((total, num)=> total + num, 0)
+console.log(total)
+
+//andddd
+
+const adadha = [
+    [1,2,3,4,5],
+    [6,7,8,9,10]
+];
+const flattendArray = adadha.reduce((accumulator , item) => [...accumulator , ...item], [])
+
+// console.log(flattendArray)
+
+//[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//***************************************
+
+
