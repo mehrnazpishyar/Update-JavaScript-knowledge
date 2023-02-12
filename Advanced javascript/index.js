@@ -553,16 +553,16 @@ const calc = {
 
 //*****************************************
 
-const str = "jayesh";
+// const str = "jayesh";
 
-function foo(str){
-  if(str.length<2){
-    return str;
-  }
-  return foo(str.slice(1))+str[0]
-}
+// function foo(str){
+//   if(str.length<2){
+//     return str;
+//   }
+//   return foo(str.slice(1))+str[0]
+// }
 
-const resulttt = foo(str);
+// const resulttt = foo(str);
 // console.log(resulttt)
 
 //hseyaj
@@ -581,4 +581,62 @@ arr2.push(4)
 // [3, 2, 1, 4]
 
 
+//*****************************************
 
+const aa = null
+// console.log(typeof(aa))
+
+//*****************************************
+
+const bb = Boolean(null)
+
+// console.log(bb)
+
+//false
+
+
+//*****************************************
+
+// const str = "hello";
+// let resultChar = ""
+// let maxCount = 1
+// const obj = {}
+// console.log(obj)
+
+// for (let char of str){
+//   console.log(char)
+//   console.log(obj[char])
+  // if (obj[char]) {
+    // console.log(char)
+    // obj[char] += 1
+    // if(obj[char] > maxCount){
+    //   maxCount = obj[char]
+    //   resultChar =char
+    // }
+  // } else {
+    // obj[char] = 1
+  // }
+// }
+
+// console.log(resultChar)
+
+//*****************************************
+
+function Person (name) {
+  this.name;
+}
+Person.prototype.country ="iran"
+
+function Child(name){
+  Person.call(this, name)
+}
+
+Child.prototype = Object.create(Person.prototype)
+Child.prototype.constructor = Child
+
+const baby = new Child("Baby")
+
+// console.log(baby.name)
+// console.log(baby.country)
+
+//*****************************************
