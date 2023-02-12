@@ -519,6 +519,66 @@ addd();
 addd();
 addd();
 addd();
-console.log(addd());
+// console.log(addd());
 
 // 8
+
+//*****************************************
+
+var a = true + true + true * 3;
+// console.log(a)
+
+//*****************************************
+
+const calc = {
+  total: 0,
+  add: function (num){
+    this.total += num;
+    return this
+  },
+  sub: function (num){
+    this.total -= num;
+    return this
+  },
+  mul: function (num){
+    this.total *= num;
+    return this
+  },
+
+}
+
+// console.log(calc.add(10).sub(5).mul(10).total)
+
+//50
+
+//*****************************************
+
+const str = "jayesh";
+
+function foo(str){
+  if(str.length<2){
+    return str;
+  }
+  return foo(str.slice(1))+str[0]
+}
+
+const resulttt = foo(str);
+// console.log(resulttt)
+
+//hseyaj
+
+//*****************************************
+
+
+const arr1 = [1,2,3]
+const arr2 = arr1.reverse()
+arr2.push(4)
+
+// console.log(arr1)
+// console.log(arr2)
+
+// [3, 2, 1, 4]
+// [3, 2, 1, 4]
+
+
+
