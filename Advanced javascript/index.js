@@ -640,3 +640,41 @@ const baby = new Child("Baby")
 // console.log(baby.country)
 
 //*****************************************
+
+// let arr = ["JC" , {name: "VK"}, "JC" , {name:"VK"}];
+
+// const res = arr.filter((item, index, array) =>{
+//   if (array.indexOf(item) === index) {
+//     return true
+//   } else {
+//     return false
+//   }
+// })
+
+// console.log(res)
+
+//['JC', {name: 'VK'}, {name: 'VK'}]
+
+//*****************************************
+const nums = [1, 2, 3, 2, 4, 3];
+const res = nums.filter((num, i, arr) => {
+//  console.log(
+//   // a. Item
+//   // num,
+//   // b. Index
+//   i,
+//   // arr,
+//   // c. indexOf
+//   arr.indexOf(num),
+//   // d. Condition
+//   arr.indexOf(num) === i,
+//  );
+
+ return arr.indexOf(num) === i; //duplicates are where the index doesn’t match the indexOf
+});
+
+//  console.log(res)
+
+ //[1, 2, 3, 4]
+
+//*****************************************
