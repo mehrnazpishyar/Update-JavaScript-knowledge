@@ -711,8 +711,19 @@ const objecttt = {
 
 const {name , age , job} = objecttt
 
-console.log(name)
+// console.log(name)
  // mehrnaz 
 
  //*****************************************
- 
+
+ const success = "{email} logged-in"
+
+ const user = "jc@gmail.com"
+
+ let display = success.replace("{email}" , user)
+
+//  console.log(display)
+
+ // jc@gmail.com logged-in
+
+ //*****************************************
