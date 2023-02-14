@@ -679,15 +679,22 @@ const res = nums.filter((num, i, arr) => {
 
 //*****************************************
 
-const age = 24;
-const key = "age"
+// const age = 24;
+// const key = "age"
 
 const persoon ={
   name:"mehrnaz",
-  [key]:age,
+  age :33
 }
 
-console.log(persoon.name)
-console.log(persoon.age)
+// console.log(persoon.name)
+// console.log(persoon.age)
+
+// for (const key in persoon ){
+//   console.log(persoon[key])
+// }
+
+// console.log(Object.keys(persoon))
+// console.log(Object.values(persoon))
 
 //*****************************************
