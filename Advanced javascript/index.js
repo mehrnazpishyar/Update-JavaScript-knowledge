@@ -678,3 +678,16 @@ const res = nums.filter((num, i, arr) => {
  //[1, 2, 3, 4]
 
 //*****************************************
+
+const age = 24;
+const key = "age"
+
+const persoon ={
+  name:"mehrnaz",
+  [key]:age,
+}
+
+console.log(persoon.name)
+console.log(persoon.age)
+
+//*****************************************
