@@ -687,6 +687,7 @@ const persoon ={
   age :33
 }
 
+const { property } = persoon
 // console.log(persoon.name)
 // console.log(persoon.age)
 
@@ -697,4 +698,21 @@ const persoon ={
 // console.log(Object.keys(persoon))
 // console.log(Object.values(persoon))
 
+const arrr = ["hello", "age" , 33]
+
+// arrr.map((item)=>console.log(item))
 //*****************************************
+
+const objecttt = {
+  name: "mehrnaz",
+  age : 32,
+  job: "programer"
+}
+
+const {name , age , job} = objecttt
+
+console.log(name)
+ // mehrnaz 
+
+ //*****************************************
+ 
