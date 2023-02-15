@@ -365,7 +365,7 @@ console.log(typeof b);
 
 //////////////////////////////////////
 
-const fish = ["Lion", "Angel"];
+const fishh = ["Lion", "Angel"];
 
 console.log(fish)
 
@@ -384,3 +384,94 @@ console.log(fish.length);
 const bb = new Boolean(false);
 console.log(bb) 
   
+//////////////////////////////////
+
+function countSelected(selectObject) {
+    let numberSelected = 0;
+    for (let i = 0; i < selectObject.options.length; i++) {
+      if (selectObject.options[i].selected) {
+        numberSelected++;
+      }
+    }
+    return numberSelected;
+  }
+  
+  const btn = document.getElementById("btn");
+  
+  btn.addEventListener("click", () => {
+    const musicTypes = document.selectForm.musicTypes;
+    console.log(`You have selected ${countSelected(musicTypes)} option(s).`);
+  });
+
+  ///////////////////////////////////////////////
+
+  const obj = { foo: 1, bar: 2 };
+
+for (const [key, val] of Object.entries(obj)) {
+  console.log(key, val);
+}
+// "foo" 1
+// "bar" 2
+
+///////////////////////////////////////////////////
+
+//Functions
+
+// Constructor
+const multiply = new Function("x", "y", "return x * y");
+
+// Declaration
+function multiply(x, y) {
+  return x * y;
+} // No need for semicolon here
+
+// Expression; the function is anonymous but assigned to a variable
+const multiply = function (x, y) {
+  return x * y;
+};
+// Expression; the function has its own name
+const multiply = function funcName(x, y) {
+  return x * y;
+};
+
+// Arrow function
+const multiply = (x, y) => x * y;
+
+// Method
+const obbj = {
+  multiply(x, y) {
+    return x * y;
+  },
+};
+
+////////////////////////////////////////////////////
+
+function outside(x) {
+    function inside(y) {
+      return x + y;
+    }
+    return inside;
+  }
+  const fnInside = outside(3); // 3
+  const result = fnInside(5); // 8
+  const result1 = outside(3)(5); // 8
+
+  ///////////////////////////////////////////////////
+
+  function A(x) {
+    function B(y) {
+      function C(z) {
+        console.log(x + y + z);
+      }
+      C(3);
+    }
+    B(2);
+  }
+  A(1); // Logs 6 (which is 1 + 2 + 3)
+  
+  ///////////////////////////////////////////////////
+
+
+
+
+
