@@ -468,8 +468,45 @@ function outside(x) {
     B(2);
   }
   A(1); // Logs 6 (which is 1 + 2 + 3)
-  
+
   ///////////////////////////////////////////////////
+
+  const foo = ["one", "two", "three"];
+  // without destructuring
+// const onee = foo[0];
+// const twoo = foo[1];
+// const threee = foo[2];
+
+// with destructuring
+
+
+///////////////////////////////////////////////////
+
+//AND operator
+
+const a1 = true && true; // t && t returns true
+const a2 = true && false; // t && f returns false
+const a3 = false && true; // f && t returns false
+const a4 = false && 3 === 4; // f && f returns false
+const a5 = "Cat" && "Dog"; // t && t returns Dog
+const a6 = false && "Cat"; // f && t returns false
+const a7 = "Cat" && false; // t && f returns false
+
+
+//OR operator
+
+const o1 = true || true; // t || t returns true
+const o2 = false || true; // f || t returns true
+const o3 = true || false; // t || f returns true
+const o4 = false || 3 === 4; // f || f returns false
+const o5 = "Cat" || "Dog"; // t || t returns Cat
+const o6 = false || "Cat"; // f || t returns Cat
+const o7 = "Cat" || false; // t || f returns Cat
+
+
+///////////////////////////////////////////////////
+
+
 
 
 
