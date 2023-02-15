@@ -352,4 +352,35 @@ return result;
 
 //***********************************************
 
+x = "The answer is " + 42; // "The answer is 42"
+
+y = 42 + " is the answer"; // "42 is the answer"
+z = "37" + 7; // "377"
+console.log(typeof z);
+
+a = "37" - 7; // 30
+b = "37" * 7; // 259
+
+console.log(typeof b);
+
+//////////////////////////////////////
+
+const fish = ["Lion", "Angel"];
+
+console.log(fish)
+
+console.log(fish[0])
+
+const car = { manyCars: { a: "Saab", b: "Jeep" }, 7: "Mazda" };
+
+console.log(car.manyCars.b); // Jeep
+console.log(car[7]); // Mazda
+
+const listA = [1, 2, 3, "a"];
+console.log(fish.length);
+
+//////////////////////////////////
+
+const bb = new Boolean(false);
+console.log(bb) 
   
