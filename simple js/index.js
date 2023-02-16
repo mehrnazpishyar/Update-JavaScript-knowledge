@@ -583,4 +583,25 @@ function Car(make, model, year) {
   
   Manager.sayHi(); // Hello, my name is Karina
   Intern.sayHi(); // Hello, my name is Tyrone
+
+  ////////////////////////////////////////////////
+
+  // classes
+
+  class Color {
+    constructor(r, g, b) {
+      this.values = [r, g, b];
+    }
+    getRed() {
+      return this.values[0];
+    }
+    setRed(value) {
+      this.values[0] = value;
+    }
+  }
+  
+  const red = new Color(255, 0, 0);
+  red.setRed(0);
+  console.log(red.getRed()); // 0; of course, it should be called "black" at this stage!
+
   
