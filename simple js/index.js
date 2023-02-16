@@ -547,3 +547,40 @@ for (const item of mySet) {
 
 //////////////////////////////////////////
 
+// create object with constructor function
+
+function Car(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  console.log(typeof Car) // function
+  
+  const myCar = new Car("Eagle", "Talon TSi", 1993);
+  console.log(typeof myCar) // object
+
+  ///////////////////////////////////////////////
+
+  const Manager = {
+    name: "Karina",
+    age: 27,
+    job: "Software Engineer",
+  };
+  const Intern = {
+    name: "Tyrone",
+    age: 21,
+    job: "Software Engineer Intern",
+  };
+  
+  function sayHi() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+  
+  // add sayHi function to both objects
+  Manager.sayHi = sayHi;
+  Intern.sayHi = sayHi;
+  
+  Manager.sayHi(); // Hello, my name is Karina
+  Intern.sayHi(); // Hello, my name is Tyrone
+  
