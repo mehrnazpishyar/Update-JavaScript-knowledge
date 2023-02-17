@@ -617,3 +617,17 @@ const min = Math.min.apply(null, numbers);
 
 console.log(min);
 // Expected output: 2
+
+//////////////////////////////////////////
+
+const a = ["a", "b", "c"];
+
+for (const [index, element] of a.entries()) {
+  console.log(index, element);
+}
+
+// 0 'a'
+// 1 'b'
+// 2 'c'
+
+///////////////////////////////
