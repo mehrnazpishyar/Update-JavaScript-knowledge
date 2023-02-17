@@ -604,4 +604,16 @@ function Car(make, model, year) {
   red.setRed(0);
   console.log(red.getRed()); // 0; of course, it should be called "black" at this stage!
 
-  
+  ////////////////////////////////////////////////
+
+const numbers = [5, 6, 2, 3, 7];
+
+const max = Math.max.apply(null, numbers);
+
+console.log(max);
+// Expected output: 7
+
+const min = Math.min.apply(null, numbers);
+
+console.log(min);
+// Expected output: 2
