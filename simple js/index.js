@@ -1383,3 +1383,38 @@ console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
 
 //*****************************************
 
+const words = ["one", "two", "three", "four"];
+words.forEach((word) => {
+  console.log(word);
+  if (word === "two") {
+    words.shift(); //'one' will delete from array
+  }
+}); // one // two // four
+
+// console.log(words); // ['two', 'three', 'four']
+
+//*****************************************
+
+const aaa = ["Wind", "Water", "Fire"];
+aaa.join(); // 'Wind,Water,Fire'
+aaa.join(", "); // 'Wind, Water, Fire'
+aaa.join(" + "); // 'Wind + Water + Fire'
+aaa.join(""); // 'WindWaterFire'
+ 
+
+////////////////////////////////////////////
+
+const myHonda = {
+    color: "red",
+    wheels: 4,
+    engine: { cylinders: 4, size: 2.2 },
+  };
+  const myCarr = [myHonda, 2, "cherry condition", "purchased 1997"];
+  console.log(myCarr)
+  const newCar = myCarr.slice(0, 2);
+
+  console.log(newCar)
+
+  console.log("myCar[0].color =", myCarr[0].color);
+
+  ////////////////////////////////////////////
