@@ -1463,3 +1463,27 @@ numericStringArray.sort(compareNumbers); // ['9', '80', '700']
 mixedNumericArray.join(); // '80,9,700,40,1,5,200'
 mixedNumericArray.sort(); // [1, 200, 40, 5, '700', '80', '9']
 mixedNumericArray.sort(compareNumbers); // [1, 5, '9', 40, '80', 200, '700']
+
+////////////////////////////////////////////
+
+// Splice method
+
+//Remove 0 (zero) elements before index 2, and insert "drum"
+splice(2, 0, "drum");
+
+//Remove 1 element at index 3
+splice(3, 1)
+
+//Remove 1 element at index 2, and insert "trumpet"
+splice(2, 1, "trumpet")
+
+//Remove 2 elements, starting from index 2
+splice(2, 2)
+
+//Remove 1 element from index -2
+splice(-2, 1)
+
+//Remove all elements, starting from index 2
+splice(2)
+
+///////////////////////////////////////////////////
