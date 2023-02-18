@@ -1418,3 +1418,21 @@ const myHonda = {
   console.log("myCar[0].color =", myCarr[0].color);
 
   ////////////////////////////////////////////
+
+  // Multiple condition checkin
+
+  if (
+    value === 1 ||
+    value === "one" ||
+    value === 2 ||
+    value === "two"
+  ) {
+    // Execute some code
+  }
+
+  // Shorthand 
+
+  if([1 ,'one' , 2 , 'two'].includes(value)){
+     // Execute some code
+  }
+
