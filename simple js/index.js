@@ -1487,3 +1487,24 @@ splice(-2, 1)
 splice(2)
 
 ///////////////////////////////////////////////////
+// Creating an async function from an AsyncFunction() constructor
+
+function resolveAfter2Seconds(x) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+const AsyncFunction = async function () {}.constructor;
+
+const fn = new AsyncFunction(
+  "a",
+  "b",
+  "return await resolveAfter2Seconds(a) + await resolveAfter2Seconds(b);",
+);
+
+fn(10, 20).then((v) => {
+  console.log(v); // prints 30 after 4 seconds
+});
