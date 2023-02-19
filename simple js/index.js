@@ -1508,3 +1508,29 @@ const fn = new AsyncFunction(
 fn(10, 20).then((v) => {
   console.log(v); // prints 30 after 4 seconds
 });
+////////////////////////////////////////////////
+
+//isNaN
+
+isNaN(NaN); // true
+isNaN(undefined); // true
+isNaN({}); // true
+
+isNaN(true); // false
+isNaN(null); // false
+isNaN(37); // false
+
+// Strings
+isNaN("37"); // false: "37" is converted to the number 37 which is not NaN
+isNaN("37.37"); // false: "37.37" is converted to the number 37.37 which is not NaN
+isNaN("37,5"); // true
+isNaN("123ABC"); // true: Number("123ABC") is NaN
+isNaN(""); // false: the empty string is converted to 0 which is not NaN
+isNaN(" "); // false: a string with spaces is converted to 0 which is not NaN
+
+// Dates
+isNaN(new Date()); // false; Date objects can be converted to a number (timestamp)
+isNaN(new Date().toString()); // true; the string representation of a Date object cannot be parsed as a number
+
+
+//////////////////////////////////////////////
