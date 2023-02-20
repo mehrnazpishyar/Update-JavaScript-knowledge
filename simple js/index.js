@@ -1666,3 +1666,31 @@ Math.trunc()
 // Returns the integer portion of x, removing any fractional digits.
 
 ////////////////////////////////////////////
+
+// copy all of object in other object with ...spread operator not just poiner of object
+
+// const personn = {
+//     name :"max" 
+  
+//   }
+  
+//   const secondPerson = personn
+
+//   personn.name = "mehrnaz"
+
+//   console.log(secondPerson)
+
+
+const personn = {
+  name :"max"  
+}
+
+const secondPerson = {
+ ...personn
+}
+
+personn.name = "mehrnaz"
+
+console.log(secondPerson)
+
+//////////////////////////////////////////////////
