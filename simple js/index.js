@@ -1674,11 +1674,11 @@ Math.trunc()
   
 //   }
   
-//   const secondPerson = personn
+// const secondPerson = personn
 
-//   personn.name = "mehrnaz"
+// personn.name = "mehrnaz"
 
-//   console.log(secondPerson)
+//  console.log(secondPerson)
 
 
 const personn = {
@@ -1689,8 +1689,36 @@ const secondPerson = {
  ...personn
 }
 
-personn.name = "mehrnaz"
+personn.name = "mehrnaz" // { name : "max"}
 
 console.log(secondPerson)
 
 //////////////////////////////////////////////////
+
+let xx = [3,3]
+let yy= xx[0] + xx[1]
+//6
+
+/////////////////////////////////////////////
+
+var str = true
+
+console.log(str + 0);
+console.log(str + "xyz");
+console.log(str + true)
+console.log(str + false)
+
+// 1 truexyz 2 1
+
+
+///////////////////////////////////////////////////
+
+var output = (function(x){
+  delete x;
+  return x ;
+}) (0);
+
+// 0
+
+////////////////////////////////////////////////
+
