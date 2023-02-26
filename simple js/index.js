@@ -1722,3 +1722,26 @@ var output = (function(x){
 
 ////////////////////////////////////////////////
 
+const array1= [1,2,3,4,5];
+const array2 = [1,2,3,8,9]
+
+const ress = array1.filter((num) => {
+  return array2.includes(num);
+})
+
+console.log(ress)
+
+// 1,2,3
+
+///////////////////////////////////////////////
+
+const numberr = "9816231529845612";
+
+const last = numberr.slice(-4);
+const resulttt=last.padStart(number.length, "*");
+
+console.log(resulttt)
+
+// *************5612
+
+//////////////////////////////////////////////
