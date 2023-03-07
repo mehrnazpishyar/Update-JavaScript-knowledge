@@ -1754,3 +1754,17 @@ console.log(y)
 
 ////////////////////////////////////////////////
 
+
+let players = [
+  {name:"vk" , role:"batsman"},
+  {name:"hp" , role:"all-rounder"},
+  {name:"rj" , role:"all-rounder"},
+]
+
+let resultttt = players.some((player) => {
+  return player.role === "batsman"
+})
+
+console.log(resultttt) // true
+
+////////////////////////////////////////////////
