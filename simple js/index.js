@@ -1768,3 +1768,13 @@ let resultttt = players.some((player) => {
 console.log(resultttt) // true
 
 ////////////////////////////////////////////////
+
+function getNumber(){
+  return 2,4,5
+}
+
+var numberr = getNumber();
+
+console.log(numberr) // 5
+
+////////////////////////////////////////////////
