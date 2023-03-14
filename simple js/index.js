@@ -1794,3 +1794,13 @@ splice(-2, 1)
 splice(2)
 
 ////////////////////////////////////////////////
+
+//example of entries method
+
+const objj = { foo: 1, bar: 2 };
+
+for (const [key, val] of Object.entries(objj)) {
+  console.log(key, val);
+}
+// "foo" 1
+// "bar" 2
