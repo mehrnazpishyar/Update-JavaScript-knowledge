@@ -1778,3 +1778,19 @@ var numberr = getNumber();
 console.log(numberr) // 5
 
 ////////////////////////////////////////////////
+
+// Some example Splice method
+
+splice(2, 0, "drum");
+
+splice(3, 1)
+
+splice(2, 1, "trumpet")
+
+splice(2, 2)
+
+splice(-2, 1)
+
+splice(2)
+
+////////////////////////////////////////////////
