@@ -1822,3 +1822,17 @@ console.log(mul(2)(3)(0))  //6
 console.log(mul (2)(3)[1](4)) //10
 
 ////////////////////////////////////////////////
+
+let arr =["eat", "tea", "dna", "and"]
+let obj = {}
+
+for (let word of arr) {
+    let key = word.split("").sort().join("")
+    if(obj[key]){
+        obj[key]=[...obj[key], word]
+    }else {
+        obj[key]=[word]
+    }
+}
+
+console.log(Object.values(obj))
