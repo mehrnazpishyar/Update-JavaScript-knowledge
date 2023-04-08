@@ -1804,3 +1804,21 @@ for (const [key, val] of Object.entries(objj)) {
 }
 // "foo" 1
 // "bar" 2
+
+////////////////////////////////////////////////
+
+function mul(x){
+  return function (y){
+    return [
+      x*y,
+      function (z){
+        return x*y + z
+      }
+    ]
+  }
+}
+
+console.log(mul(2)(3)(0))  //6
+console.log(mul (2)(3)[1](4)) //10
+
+////////////////////////////////////////////////
