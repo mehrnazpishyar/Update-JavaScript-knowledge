@@ -1824,15 +1824,27 @@ console.log(mul (2)(3)[1](4)) //10
 ////////////////////////////////////////////////
 
 let arr =["eat", "tea", "dna", "and"]
-let obj = {}
+let objjj = {}
 
 for (let word of arr) {
     let key = word.split("").sort().join("")
-    if(obj[key]){
-        obj[key]=[...obj[key], word]
+    if(objjj[key]){
+        objjj[key]=[...objjj[key], word]
     }else {
-        obj[key]=[word]
+        objjj[key]=[word]
     }
 }
 
-console.log(Object.values(obj))
+console.log(Object.values(objjj)) // [["eat", "tea"], ["dna", "and"]]
+
+////////////////////////////////////////////////
+const stringg = "mehrnaz pishyar"
+const arrayy = stringg.split("")
+
+const resss=arrayy.map((word)=> {
+    return word[0].toUpperCase() + word.slice(1)
+})
+
+const output = resss.join("")
+
+console.log(output)
