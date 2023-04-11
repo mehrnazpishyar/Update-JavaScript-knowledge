@@ -1848,3 +1848,25 @@ const resss=arrayy.map((word)=> {
 const output = resss.join("")
 
 console.log(output)
+
+////////////////////////////////////////////////
+
+const hof = (callBack1, callBack2) => {
+  callBack1()
+  setTimeout(callBack2, 1000)
+  console.log("three")
+}
+
+const callBack1= () => {
+  console.log("one")
+}
+
+const callBack2 = () => {
+  console.log("two")
+}
+
+hof(callBack1, callBack2)
+
+// one three two
+
+////////////////////////////////////////////////
