@@ -1870,3 +1870,18 @@ hof(callBack1, callBack2)
 // one three two
 
 ////////////////////////////////////////////////
+
+const numss = new Set();
+numss.add(1);
+numss.add(2);
+numss.add(3);
+numss.add(1);
+
+numss.delete(1)
+
+console.log(numss.has(1))
+console.log(numss.size)
+
+// false 2
+
+////////////////////////////////////////////////
