@@ -1885,3 +1885,14 @@ console.log(numss.size)
 // false 2
 
 ////////////////////////////////////////////////
+
+const aarayy= [1,2,3,4,5]
+
+const aaa = aarayy.at(1)
+const b = aarayy.at(-1)
+
+console.log(aaa) // 2
+console.log(b) // 5
+
+////////////////////////////////////////////////
+
