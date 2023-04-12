@@ -1905,3 +1905,11 @@ console.log(object1.hasOwnProperty('toString')); //false
 
 console.log(object1.hasOwnProperty('hasOwnProperty')); //false
 
+//////////////////////////////////////////////////
+
+Object.is(25, 25); // true
+Object.is("foo", "foo"); // true
+Object.is("foo", "bar"); // false
+Object.is(null, null); // true
+Object.is(undefined, undefined); // true
+Object.is(window, window); // true
